@@ -1,0 +1,44 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  height: 300vh; /* Simulate a tall content to enable scrolling */
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s; /* Smooth transition */
+  color: white;
+}
+
+.section.fade-in {
+  opacity: 1;
+}
